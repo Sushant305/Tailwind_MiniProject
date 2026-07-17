@@ -10,25 +10,47 @@
 <body class="bg-[#0B1020] text-white h-screen">
 
     <header class="fixed top-0 left-0 w-full z-50 ">
-        <nav class="flex items-center justify-between m-4 mr-10 ml-10 bg-white/10 p-5 backdrop-blur-2xl border border-white/10 rounded-2xl">
+        <nav class="flex items-center justify-between mx-10 mt-4 bg-white/10 p-3 backdrop-blur-2xl border border-white/10 rounded-2xl shadow-[0_8px_32px_rgba(0,0,0,.35)]">
             <div class="flex justify-center items-center gap-3">
                 <div class="w-8 h-8 rounded-lg bg-gradient-to-r from-purple-500 to-indigo-500"></div>
                 <div>
-                    <h1>FlowApp</h1>
+                    <h1 class="text-2xl font-bold">FlowApp</h1>
                 </div>
             </div>
 
             <div class="flex justify-center items-center gap-3 ">
-                <ul class="flex justify-center items-center gap-3 mr-8">
-                    <li><a href="#">Feature</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Reviews</a></li>
+                <ul class="hidden md:flex justify-center items-center gap-8 mr-8">
+                    <li><a href="#" class="hover:text-blue-500 transition-all duration-300 ease-in-out">Features</a></li>
+                    <li><a href="#" class="hover:text-blue-500 transition-all duration-300 ease-in-out">Pricing</a></li>
+                    <li><a href="#" class="hover:text-blue-500 transition-all duration-300 ease-in-out">Reviews</a></li>
                 </ul>
 
-                <button>Get Started</button>
+                <button class=" px-6 py-3 hidden md:flex rounded-full bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-400 hover:to-purple-500 text-white font-semibold transition-all duration-300 hover:scale-105 hover:shadow-[0_0_40px_rgba(99,102,241,0.7)]">Get Started</button>
             </div>
+
+            <div class="md:hidden text-3xl" id="menuBtn">
+                ☰
+            </div>
+
+            <ul id="mobileMenu" class="hidden  flex flex-col absolute top-20 left-0 w-full bg-white p-6 rounded-2xl">
+                <li><a href="#" class="text-black">Features</a></li>
+                <li><a href="#" class="text-black">Pricing</a></li>
+                <li><a href="#" class="text-black">Reviews</a></li>
+                <button class=" px-6 py-3 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-400 hover:to-purple-500 text-black font-semibold transition-all duration-300 hover:scale-105 hover:shadow-[0_0_40px_rgba(99,102,241,0.7)]">Get Started</button>
+
+            </ul>
         </nav>
     </header>
+
+
+    <script>
+         const menuBtn = document.getElementById("menuBtn");
+        const mobileMenu = document.getElementById("mobileMenu");
+
+        menuBtn.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+        });
+    </script>
     
 </body>
 </html>
