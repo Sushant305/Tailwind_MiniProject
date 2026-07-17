@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./Images/tailwind_css_Logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="./output.css">
     <title>Tailwind Mini Project</title>
 </head>
+
 <body class="bg-[#0B1020] text-white h-screen">
 
     <header class="fixed top-0 left-0 w-full z-50 ">
-        <nav class="flex items-center justify-between mx-10 mt-4 bg-white/10 p-3 backdrop-blur-2xl border border-white/10 rounded-2xl shadow-[0_8px_32px_rgba(0,0,0,.35)]">
+        <nav
+            class="flex items-center justify-between mx-10 mt-4 bg-white/10 p-3 backdrop-blur-2xl border border-white/10 rounded-2xl shadow-[0_8px_32px_rgba(0,0,0,.35)]">
             <div class="flex justify-center items-center gap-3">
                 <div class="w-8 h-8 rounded-lg bg-gradient-to-r from-purple-500 to-indigo-500"></div>
                 <div>
@@ -20,12 +24,15 @@
 
             <div class="flex justify-center items-center gap-3 ">
                 <ul class="hidden md:flex justify-center items-center gap-8 mr-8">
-                    <li><a href="#" class="hover:text-blue-500 transition-all duration-300 ease-in-out">Features</a></li>
+                    <li><a href="#" class="hover:text-blue-500 transition-all duration-300 ease-in-out">Features</a>
+                    </li>
                     <li><a href="#" class="hover:text-blue-500 transition-all duration-300 ease-in-out">Pricing</a></li>
                     <li><a href="#" class="hover:text-blue-500 transition-all duration-300 ease-in-out">Reviews</a></li>
                 </ul>
 
-                <button class=" px-6 py-3 hidden md:flex rounded-full bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-400 hover:to-purple-500 text-white font-semibold transition-all duration-300 hover:scale-105 hover:shadow-[0_0_40px_rgba(99,102,241,0.7)]">Get Started</button>
+                <button
+                    class=" px-6 py-3 hidden md:flex rounded-full bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-400 hover:to-purple-500 text-white font-semibold transition-all duration-300 hover:scale-105 hover:shadow-[0_0_40px_rgba(99,102,241,0.7)]">Get
+                    Started</button>
             </div>
 
             <div class="md:hidden text-3xl" id="menuBtn">
@@ -33,24 +40,164 @@
             </div>
 
             <ul id="mobileMenu" class="hidden  flex flex-col absolute top-20 left-0 w-full bg-white p-6 rounded-2xl">
-                <li><a href="#" class="text-black">Features</a></li>
-                <li><a href="#" class="text-black">Pricing</a></li>
-                <li><a href="#" class="text-black">Reviews</a></li>
-                <button class=" px-6 py-3 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-400 hover:to-purple-500 text-black font-semibold transition-all duration-300 hover:scale-105 hover:shadow-[0_0_40px_rgba(99,102,241,0.7)]">Get Started</button>
+                <li><a href="#"
+                        class="text-black hover:text-blue-500 transition-all duration-300 ease-in-out">Features</a></li>
+                <li><a href="#"
+                        class="text-black hover:text-blue-500 transition-all duration-300 ease-in-out">Pricing</a></li>
+                <li><a href="#"
+                        class="text-black hover:text-blue-500 transition-all duration-300 ease-in-out">Reviews</a></li>
+                <button
+                    class=" mt-4 px-6 py-3 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-400 hover:to-purple-500 text-black font-semibold transition-all duration-300 hover:scale-105 hover:shadow-[0_0_40px_rgba(99,102,241,0.7)]">Get
+                    Started</button>
 
             </ul>
         </nav>
     </header>
 
+    <section
+        class="relative overflow-hidden min-h-screen bg-[#0B1020] bg-[url('./Images/grid-pattern.png')] bg-cover bg-center bg-no-repeat mb-4">
+        <div class="absolute  w-[650px] h-[650px] rounded-full bg-blue-700/20 blur-[120px] left-1/2 -translate-x-1/2">
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-8 py-32">
+
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+
+                <div class="w-full lg-1/2">
+                    <div class="bg-white/5 p-3 backdrop-blur-2xl border border-white/20 rounded-2xl">
+                        <span class="inline-block size-3 bg-green-500 rounded-full animate-pulse mr-3 "></span>
+                        <span> Now with ai powered Features</span>
+                        <span
+                            class="bg-gradie bg-gradient-to-r from-purple-500 to-indigo-500 rounded-2xl py-1 px-2 ml-2">NEW</span>
+                    </div>
+
+                    <h2 class="font-bold text-6xl mt-20 tracking-[2px]">
+                        Build Products
+                        <span
+                            class=" tracking-[2px] block mt-3 text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-500 to-pink-600">
+                            Users love
+                        </span>
+                    </h2>
+
+                    <p class="text-gray-400 mt-6">The all-in-one platform for team to collaborate, design and ship
+                        amazing products 10x Faster</p>
+
+                    <div class="flex flex-col lg:flex-row gap-5 mt-8 justify-center lg:justify-start ">
+
+                        <button class="bg-gradient-to-r from-blue-500 to-purple-500 rounded-full px-8 py-3 ">
+                            Start Free Trial
+                        </button>
+
+                        <button
+                            class="flex justify-center items-center gap-3 border-2 border-white/50 rounded-full px-8 py-3 hover:bg-white hover:text-black ">
+                            <span><i class="fa-solid fa-play"></i></span>
+                            <p>Watch Demo</p>
+                        </button>
+                    </div>
+
+                    <div class="flex mt-10">
+
+                        <div class="flex -space-x-2">
+
+                            <img class="h-10 w-10 rounded-full border-[#0B1020]"
+                                src="https://randomuser.me/api/portraits/men/1.jpg" alt="User">
+
+                            <img class="h-10 w-10 rounded-full border-[#0B1020]"
+                                src="https://randomuser.me/api/portraits/women/2.jpg" alt="User">
+
+                            <img class="h-10 w-10 rounded-full border-[#0B1020]"
+                                src="https://randomuser.me/api/portraits/men/3.jpg" alt="User">
+
+                            <div class="size-10 rounded-full bg-purple-500 flex justify-center items-center">+12</div>
+
+                        </div>
+
+                        <div class="flex flex-col ml-3">
+                            <span>⭐⭐⭐⭐</span>
+                            <span class="">Trusted by 2,000+ teams worldwide</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="w-full lg:1/2 relative flex justify-center items-center">
+
+                    <div>
+                        <img class="rounded-2xl max-w-xl object-cover" src="./Images/employeeImage.png" alt="">
+                    </div>
+
+                    <div class="absolute -bottom-6 -left-8  flex justify-center items-center gap-3 bg-white/10 backdrop-blur-xl border-2 border-white px-4 py-3 rounded-2xl animate-pulse">
+                        <div class="flex h-10 w-10 items-center justify-center rounded-full bg-blue-500">
+                            <i class="fa-solid fa-check text-white text-sm"></i>
+                        </div>
+
+                        <div>
+                            <p>Task completed</p>
+                            <p class=" text-sm">Project submitted</p>
+                        </div>
+                    </div>
+
+                    <div class="absolute top-1/2 -right-30  flex justify-center items-center gap-3 bg-white/10 backdrop-blur-xl border-2 border-white px-4 py-3 rounded-2xl animate-bounce">
+                        <div class="flex -space-x-2">
+                            <div class="size-6 bg-purple-600 rounded-full"></div>
+                            <div class="size-6 bg-pink-600 rounded-full"></div>
+                            <div class="size-6 bg-blue-600 rounded-full"></div>
+                        </div>
+
+                        <div>
+                            <p>Task completed</p>
+                            <p class=" text-sm">Project submitted</p>
+                        </div>
+                    </div>
+
+                    <div class="absolute -top-6 -right-8  flex justify-center items-center gap-3 bg-white/10 backdrop-blur-xl border-2 border-white px-4 py-3 rounded-2xl animate-pulse">
+                        <div class="flex h-10 w-10 items-center justify-center rounded-full bg-green-500">
+                            <i class="fa-solid fa-arrow-trend-up text-white text-xl"></i>
+                        </div>
+
+                        <div>
+                            <p>+127%</p>
+                            <p class=" text-sm">Productivity</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <script>
-         const menuBtn = document.getElementById("menuBtn");
+        const menuBtn = document.getElementById("menuBtn");
         const mobileMenu = document.getElementById("mobileMenu");
 
         menuBtn.addEventListener("click", () => {
             mobileMenu.classList.toggle("hidden");
         });
     </script>
-    
+
 </body>
+
 </html>
